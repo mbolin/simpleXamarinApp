@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ViewModel="clr-namespace:SimpleXamarinApp.ViewModel"
+             x:Class="SimpleXamarinApp.MainPage"
+             x:DataType="ViewModel:MyModelViewModel">
+    <ContentPage.BindingContext>
+        <ViewModel:MyModelViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="15">
+        <Label Text="Simple Xamarin App" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        <Label Text="Name:"/>
+        <Entry Text="{Binding CurrentName}"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0" Text="Add" Command="{Binding AddCommand}"/>
+            <Button Grid.Column="1" Text="Remove" Command="{Binding RemoveCommand}"/>
+            <Button Grid.Column="2" Text="Constant add" Command="{Binding ConstantAddCommand}"/>
+        </Grid>
+        <ListView Header="Names" 
+                  ItemsSource="{Binding People.Persons}"
+                  SelectedItem="{Binding SelectedPerson}">
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" TextColor="Black"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>
