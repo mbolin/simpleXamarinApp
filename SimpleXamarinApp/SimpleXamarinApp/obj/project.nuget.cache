@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "tVuWRUPEEcb6lSz5G1gBtyFwth/j69uFFttW8xxTJZBQawnhcMFl0MtFc4H3KbCZi2tsCHfuvdxT8bogiskFIQ==",
+  "dgSpecHash": "v8BcttkUDcZLoS3Q4urqs4NemzwCSv0ZdJF2kOUAEQ+Rr83R9Ty6X472BAByP++uTTe0XedgKd0NTK/AqPtfdw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mbolin\\source\\repos\\SimpleXamarinApp\\SimpleXamarinApp\\SimpleXamarinApp\\SimpleXamarinApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mbolin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\mbolin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\mbolin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\mbolin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\mbolin\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\mbolin\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512"
   ],
   "logs": []
 }

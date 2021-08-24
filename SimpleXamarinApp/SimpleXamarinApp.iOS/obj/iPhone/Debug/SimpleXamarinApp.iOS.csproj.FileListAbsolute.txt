@@ -4,10 +4,10 @@ C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\obj\iPhone\Debug\optimized\
-C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\obj\iPhone\Debug\SimpleXamarinApp.iOS.csprojAssemblyReference.cache
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\obj\iPhone\Debug\SimpleXamarinApp.iOS.csproj.CoreCompileInputs.cache
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\bin\iPhone\Debug\SimpleXamarinApp.iOS.exe
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\bin\iPhone\Debug\SimpleXamarinApp.iOS.pdb
+C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
@@ -53,6 +53,7 @@ C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\bin\iPhone\Debug\SimpleXamarinApp.dll
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\bin\iPhone\Debug\SimpleXamarinApp.pdb
+C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\obj\iPhone\Debug\SimpleXamarinApp.iOS.csprojAssemblyReference.cache
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\obj\iPhone\Debug\SimpleXamarinApp.iOS.csproj.CopyComplete
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\obj\iPhone\Debug\SimpleXamarinApp.iOS.exe
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp.iOS\obj\iPhone\Debug\SimpleXamarinApp.iOS.pdb

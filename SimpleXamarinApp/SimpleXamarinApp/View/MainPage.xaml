@@ -1,41 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:ViewModel="clr-namespace:SimpleXamarinApp.ViewModel"
-             x:Class="SimpleXamarinApp.MainPage"
-             x:DataType="ViewModel:MyModelViewModel">
+             xmlns:ViewModel="clr-namespace:SimpleXamarinApp.ViewModel" 
+             xmlns:Model="clr-namespace:SimpleXamarinApp.Model"
+             x:DataType="ViewModel:MyModelViewModel"
+             x:Class="SimpleXamarinApp.MainPage">
     <ContentPage.BindingContext>
         <ViewModel:MyModelViewModel/>
     </ContentPage.BindingContext>
+    <ScrollView>
+        <StackLayout Padding="15">
+            <Label Text="Simple Xamarin App" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Label Text="Name:"/>
+            <Entry Text="{Binding CurrentName}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0" Text="Add" Command="{Binding AddCommand}"/>
+                <Button Grid.Column="1" Text="Remove" Command="{Binding RemoveCommand}"/>
+                <Button Grid.Column="2" Text="Constant add" Command="{Binding ConstantAddCommand}"/>
+            </Grid>
+            <ListView Header="Names" 
+                      ItemsSource="{Binding People}"
+                      SelectedItem="{Binding SelectedPerson}"
+                      HeightRequest="300">
 
-    <StackLayout Padding="15">
-        <Label Text="Simple Xamarin App" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-        <Label Text="Name:"/>
-        <Entry Text="{Binding CurrentName}"/>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="55"/>
-            </Grid.RowDefinitions>
-            <Button Grid.Column="0" Text="Add" Command="{Binding AddCommand}"/>
-            <Button Grid.Column="1" Text="Remove" Command="{Binding RemoveCommand}"/>
-            <Button Grid.Column="2" Text="Constant add" Command="{Binding ConstantAddCommand}"/>
-        </Grid>
-        <ListView Header="Names" 
-                  ItemsSource="{Binding People.Persons}"
-                  SelectedItem="{Binding SelectedPerson}">
-            
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Name}" TextColor="Black"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="Model:Person">
+                        <TextCell Text="{Binding Name}" TextColor="Black"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-    </StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="US ZipCode:"/>
+                <Entry Grid.Row="0" Grid.Column="1" Keyboard="Numeric" Text="{Binding ZipCode}"/>
+            </Grid>
+            <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
+            <Label Text="The Weather" FontSize="Large" FontAttributes="Bold"/>
 
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Temperature:"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="{Binding CurrentWeather.Main.Temp}"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Feels Like:"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding CurrentWeather.Main.FeelsLike}"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Description:"/>
+                <Label Grid.Row="2" Grid.Column="1" Text="{Binding CurrentWeather.WeatherWeather[0].Description}"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "SimpleXamarinApp.Android.dll" comes first in this list. */
 		"SimpleXamarinApp.Android.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"SimpleXamarinApp.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
@@ -37,6 +38,10 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.LocalBroadcastManager.dll",
 		"Xamarin.AndroidX.Media.dll",
 		"Xamarin.AndroidX.MultiDex.dll",
+		"Xamarin.AndroidX.Navigation.Common.dll",
+		"Xamarin.AndroidX.Navigation.Runtime.dll",
+		"Xamarin.AndroidX.Navigation.UI.dll",
+		"Xamarin.AndroidX.Preference.dll",
 		"Xamarin.AndroidX.Print.dll",
 		"Xamarin.AndroidX.RecyclerView.dll",
 		"Xamarin.AndroidX.SavedState.dll",
