@@ -1,73 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:ViewModel="clr-namespace:SimpleXamarinApp.ViewModel" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:Model="clr-namespace:SimpleXamarinApp.Model"
-             x:DataType="ViewModel:MyModelViewModel"
+             xmlns:ViewModel="clr-namespace:SimpleXamarinApp.ViewModel"
+             x:DataType="ViewModel:MainPageViewModel"
              x:Class="SimpleXamarinApp.MainPage">
     <ContentPage.BindingContext>
-        <ViewModel:MyModelViewModel/>
+        <ViewModel:MainPageViewModel />
     </ContentPage.BindingContext>
     <ScrollView>
         <StackLayout Padding="15">
-            <Label Text="Simple Xamarin App" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-            <Label Text="Name:"/>
-            <Entry Text="{Binding CurrentName}"/>
+            <Label Text="Simple Xamarin App" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+            <Label Text="Name:" />
+            <Entry Text="{Binding CurrentName}" />
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="55" />
                 </Grid.RowDefinitions>
-                <Button Grid.Column="0" Text="Add" Command="{Binding AddCommand}"/>
-                <Button Grid.Column="1" Text="Remove" Command="{Binding RemoveCommand}"/>
-                <Button Grid.Column="2" Text="Constant add" Command="{Binding ConstantAddCommand}"/>
+                <Button Grid.Column="0" Text="Add" Command="{Binding AddCommand}" />
+                <Button Grid.Column="1" Text="Remove" Command="{Binding RemoveCommand}" />
+                <Button Grid.Column="2" Text="Constant add" Command="{Binding ConstantAddCommand}" />
             </Grid>
-            <ListView Header="Names" 
+            <ListView Header="Names"
                       ItemsSource="{Binding People}"
                       SelectedItem="{Binding SelectedPerson}"
                       HeightRequest="300">
 
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="Model:Person">
-                        <TextCell Text="{Binding Name}" TextColor="Black"/>
+                        <TextCell Text="{Binding Name}" TextColor="Black" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="55" />
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Text="US ZipCode:"/>
-                <Entry Grid.Row="0" Grid.Column="1" Keyboard="Numeric" Text="{Binding ZipCode}"/>
-            </Grid>
-            <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
-            <Label Text="The Weather" FontSize="Large" FontAttributes="Bold"/>
-
-
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Text="Temperature:"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="{Binding CurrentWeather.Main.Temp}"/>
-                <Label Grid.Row="1" Grid.Column="0" Text="Feels Like:"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="{Binding CurrentWeather.Main.FeelsLike}"/>
-                <Label Grid.Row="2" Grid.Column="0" Text="Description:"/>
-                <Label Grid.Row="2" Grid.Column="1" Text="{Binding CurrentWeather.WeatherWeather[0].Description}"/>
+                <Button Grid.Column="0" Text="Weather Page" Command="{Binding WeatherPageCommand}" />
+                <Button Grid.Column="1" Text="Part 3 Page" Command="{Binding Page3Command}" />
             </Grid>
         </StackLayout>
     </ScrollView>

@@ -11,3 +11,6 @@ C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp\
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp\bin\Debug\netstandard2.0\ref\SimpleXamarinApp.dll
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp\bin\Debug\netstandard2.0\SimpleXamarinApp.pdb
 C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp\obj\Debug\netstandard2.0\SimpleXamarinApp.csprojAssemblyReference.cache
+C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp\obj\Debug\netstandard2.0\View\WeatherPage.xaml.g.cs
+C:\Users\mbolin\source\repos\SimpleXamarinApp\SimpleXamarinApp\SimpleXamarinApp\obj\Debug\netstandard2.0\View\Part3Page.xaml.g.cs
